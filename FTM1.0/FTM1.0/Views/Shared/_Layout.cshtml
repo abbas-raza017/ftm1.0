@@ -1,0 +1,195 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - FTM</title>
+    @*@Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")*@
+
+    <!-- CSS -->
+    <link href="~/Content/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="~/Content/css/font-awesome.min.css" rel="stylesheet" media="screen">
+    <link href="~/Content/css/animate.min.css" rel="stylesheet" media="screen">
+    <link href="~/Content/css/lightbox.css" rel="stylesheet" media="screen">
+    <link href="~/Content/css/syntax/shCore.css" rel="stylesheet" media="screen">
+    <link href="~/Content/css/syntax/shThemeDefault.css" rel="stylesheet" media="screen">
+    <link href="~/Content/css/style.css" rel="stylesheet" media="screen" title="default">
+    <link href="~/Content/css/color-red.css" rel="stylesheet" media="screen" title="default">
+    <link href="~/Content/css/width-full.css" rel="stylesheet" media="screen" title="default">
+
+</head>
+<body>
+
+    <!-- Setting Options -->
+    <div id="color-switcher" class="animated fadeIn animation-dalay-10">
+        <div id="color-switcher-tab">
+            <i class="fa fa-gear fa fa-2x"></i>
+        </div>
+        <div id="color-switcher-content">
+            <h3>Color Selector</h3>
+            <a href="#" rel="color-default.css" class="color default">default</a>
+            <a href="#" rel="color-niceblue.css" class="color niceblue">niceblue</a>
+            <a href="#" rel="color-intenseblue.css" class="color intenseblue">intenseblue</a>
+            <a href="#" rel="color-otherblue.css" class="color otherblue">otherblue</a>
+            <a href="#" rel="color-blue.css" class="color blue">blue</a>
+            <a href="#" rel="color-puregreen.css" class="color puregreen">puregreen</a>
+            <a href="#" rel="color-grassgreen.css" class="color grassgreen">grassgreen</a>
+            <a href="#" rel="color-green.css" class="color green">green</a>
+            <a href="#" rel="color-olive.css" class="color olive">olive</a>
+            <a href="#" rel="color-gold.css" class="color gold">gold</a>
+            <a href="#" rel="color-orange.css" class="color orange">orange</a>
+            <a href="#" rel="color-pink.css" class="color pink">pink</a>
+            <a href="#" rel="color-fuchsia.css" class="color fuchsia">fuchsia</a>
+            <a href="#" rel="color-violet.css" class="color violet">violet</a>
+            <a href="#" rel="color-red.css" class="color red">red</a>
+
+            <h3>Container Selector</h3>
+            <div class="btn-group">
+                <button href="#" class="option btn btn-sm btn-primary" rel="width-boxed.html">Boxed</button>
+                <button href="#" class="option btn btn-sm btn-primary" rel="width-full.html">Full Width</button>
+            </div>
+        </div>
+    </div> <!-- color-switcher -->
+
+    <div class="boxed animated fadeIn animation-delay-5">
+        <header id="header" class="hidden-xs">
+            <div class="container">
+                <div id="header-title">
+                    <h1 class="animated fadeInDown"><a href="index.html"><span>F</span>TM</a></h1>
+                    <p class="animated fadeInLeft">Feedback That Matters!</p>
+                </div>
+                <div id="social-header" class="hidden-xs">
+                    <a href="#" class="social-icon soc-twitter animated fadeInDown animation-delay-1"><i class="fa fa-twitter"></i></a>
+                    <a href="#" class="social-icon soc-google-plus animated fadeInDown animation-delay-2"><i class="fa fa-google-plus"></i></a>
+                    <a href="#" class="social-icon soc-facebook animated fadeInDown animation-delay-3"><i class="fa fa-facebook"></i></a>
+                    <a href="#" class="social-icon soc-instagram animated fadeInDown animation-delay-4"><i class="fa fa-instagram"></i></a>
+                    <a href="#" class="social-icon soc-pinterest animated fadeInDown animation-delay-5"><i class="fa fa-pinterest"></i></a>
+                    <a href="#" class="social-icon soc-linkedin animated fadeInDown animation-delay-6"><i class="fa fa-linkedin"></i></a>
+                    <a href="#" class="social-icon soc-github animated fadeInDown animation-delay-7"><i class="fa fa-github"></i></a>
+                </div>
+                <div id="search-header" class="hidden-xs animated bounceInRight">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search...">
+                        <span class="input-group-btn">
+                            <button class="btn btn-default" type="button"><i class="fa fa-search"></i></button>
+                        </span>
+                    </div><!-- /input-group -->
+                </div>
+            </div> <!-- container -->
+        </header> <!-- header -->
+        <nav class="navbar navbar-static-top navbar-mind" role="navigation">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <a class="navbar-brand visible-xs" href="index.html">Open <span>Mind</span></a>
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-mind-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <i class="fa fa-bars fa-inverse"></i>
+                    </button>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse navbar-mind-collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="dropdown active">
+                            @Html.ActionLink("Home", "index", "Home")
+                        </li> <!-- dropdown -->
+                        <li class="dropdown">
+                            @Html.ActionLink("Categories", "categories", "Home")
+                            @*<ul class="dropdown-menu">
+                                <li><a href="#">Automobiles</a></li>
+                                <li><a href="#">Food and Restaurants</a></li>
+                                <li><a href="#">Educational Institutes</a></li>
+                                <li><a href="#">Health & Well-being</a></li>
+                                <li><a href="#">Cloths and Fashion</a></li>
+                                <li><a href="#">Electronics</a></li>
+                                <li><a href="#">Travel and Vacations</a></li>
+                            </ul>*@
+                        </li> <!-- dropdown -->
+                        <li class="dropdown">
+                            @Html.ActionLink("Blogs", "blogs", "Home")
+                        </li> <!-- dropdown -->
+                        <li class="dropdown">
+                            <a href="faq.html">FAQ's</a>
+                        </li> <!-- dropdown -->
+                        <li class="dropdown">
+                            <a href="#">Case Studies</a>
+                        </li> <!-- dropdown -->
+                        <li class="dropdown">
+                            <a href="#">Benefits</a>
+                        </li> <!-- dropdown -->
+                        <li class="dropdown">
+                            @Html.ActionLink("Dashboard", "dashboard", "Home")
+                        </li> <!-- dropdown -->
+                        <li class="dropdown">
+                            @Html.ActionLink("Company Review Page", "brand", "Home")
+                        </li> <!-- dropdown -->
+                        <li class="dropdown">
+                            <a href="brand-website.html">Brand Website</a>
+                        </li> <!-- dropdown -->
+                    </ul> <!-- nav nabvar-nav -->
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Login</a>
+                            <div class="dropdown-menu dropdown-login animated fadeInUp">
+                                <form role="form">
+                                    <h4 class="section-title">Login Form</h4>
+
+                                    <div class="form-group">
+                                        <div class="input-group login-input">
+                                            <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                                            <input type="text" class="form-control" placeholder="Username">
+                                        </div>
+                                        <br>
+                                        <div class="input-group login-input">
+                                            <span class="input-group-addon"><i class="fa fa-lock"></i></span>
+                                            <input type="password" class="form-control" placeholder="Password">
+                                        </div>
+                                        <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox"> Remember me
+                                            </label>
+                                        </div>
+                                        <button type="submit" class="btn btn-primary pull-right">Login</button>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </form>
+                            </div>
+                        </li> <!-- dropdown -->
+                    </ul> <!-- nav nabvar-nav -->
+                </div><!-- navbar-collapse -->
+            </div> <!-- container -->
+        </nav> <!-- navbar navbar-default -->
+
+            @RenderBody()
+    
+        <footer id="footer">
+            <p>&copy; 2016 <a href="#">FTM</a>, inc. All rights reserved.</p>
+        </footer>
+    </div> <!-- boxed -->
+    <div id="back-top">
+        <a href="#header"><i class="fa fa-chevron-up"></i></a>
+    </div>
+        
+    <!-- Scripts -->
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="~/Scripts/jquery.cookie.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <script src="~/Scripts/jquery.mixitup.min.js"></script>
+    <script src="~/Scripts/lightbox-2.6.min.js"></script>
+    @*<script src="~/Scripts/holder.js"></script>*@
+    <script src="~/Scripts/app.js"></script>
+    <script src="~/Scripts/styleswitcher.js"></script>
+    <script src="~/Scripts/syntax/shCore.js"></script>
+    <script src="~/Scripts/syntax/shBrushXml.js"></script>
+    <script src="~/Scripts/syntax/shBrushJScript.js"></script>
+    <script type="text/javascript">
+        SyntaxHighlighter.all()
+    </script>
+
+        @*@Scripts.Render("~/bundles/jquery")
+        @Scripts.Render("~/bundles/bootstrap")
+        @RenderSection("scripts", required: false)*@
+</body>
+</html>

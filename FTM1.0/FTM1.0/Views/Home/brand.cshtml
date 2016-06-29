@@ -1,0 +1,243 @@
+﻿
+@{
+    ViewBag.Title = "Company Review Page";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<header class="wrap-title">
+    <div class="container">
+        <h1 class="page-title">PizzaHut</h1>
+        <ol class="breadcrumb hidden-xs">
+            <li><a href="#">Home</a></li>
+            <li class="active">PizzaHut</li>
+        </ol>
+    </div>
+</header>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-3">
+            <aside class="sidebar">
+                <div class="block">
+                    <div class="input-group">
+                        <input type="text" placeholder="Search..." class="form-control">
+                        <span class="input-group-btn">
+                            <button class="btn btn-primary" type="button"><i class="fa fa-search"></i></button>
+                        </span>
+                    </div><!-- /input-group -->
+                </div>
+                <div class="block">
+                    <ul class="nav nav-tabs" id="myTab2">
+                        <li class="active"><a href="#categories" data-toggle="tab"><i class="fa fa-folder-open"></i></a></li>
+                        <li><a href="#archive" data-toggle="tab"><i class="fa fa-clock-o"></i></a></li>
+                        <li><a href="#tags" data-toggle="tab"><i class="fa fa-tags"></i></a></li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane" id="archive">
+                            <h3 class="post-title">Archives</h3>
+                            <form class="form-inline">
+                                <div class="form-group">
+                                    <input type="email" class="form-control input-sm" id="exampleInputEmail3" placeholder="Date from" style="width:78px">
+                                </div>
+                                -
+                                <div class="form-group">
+                                    <input type="password" class="form-control input-sm" id="exampleInputPassword3" placeholder="Date to" style="width:78px">
+                                </div>
+                                <button class="btn btn-default btn-sm pull-right">Search</button>
+                            </form>
+                            <ul class="simple">
+                                <li><a href="#">December 2012</a></li>
+                                <li><a href="#">January 2013</a></li>
+                                <li><a href="#">February 2013</a></li>
+                                <li><a href="#">March 2013</a></li>
+                                <li><a href="#">April 2013</a></li>
+                            </ul>
+                        </div>
+                        <div class="tab-pane active" id="categories">
+                            <h3 class="post-title">Categories</h3>
+                            <ul class="simple">
+                                <li><a href="#">Customers Reviews</a></li>
+                                <li><a href="#">Visitors Reviews</a></li>
+                                <li><a href="#">Suggestions</a></li>
+                                <li><a href="#">Web Developer</a></li>
+                            </ul>
+                        </div>
+                        <div class="tab-pane" id="tags">
+                            <h3 class="post-title">Tags</h3>
+                            <div class="tags-cloud">
+                                <a href="#" class="tag">Customers Reviews</a>
+                                <a href="#" class="tag">Visitors Reviews</a>
+                                <a href="#" class="tag">Suggestions</a>
+                                <a href="#" class="tag">Web Developer</a>
+                                <a href="#" class="tag">Negative</a>
+                                <a href="#" class="tag">Positive</a>
+                            </div>
+                        </div>
+                    </div> <!-- tab-content -->
+                </div>
+
+            </aside> <!-- Sidebar -->
+        </div>
+        <div class="col-md-6">
+            <article class="post animated fadeInLeft animation-delay-8">
+                <div class="panel panel-primary">
+                    <div class="panel-body">
+                        <div class="panel-body">
+                            <ul class="comments-sidebar">
+                                <li>
+                                    <img src="~/Content/img/client.jpg" class="img-responsive" alt="Image">
+                                    <img src="~/Content/img/stars.png" style="height:20px" class="pull-left" /><br />
+                                    <h4><a href="#">Andrew</a> in <a href="#">Lorem ipsum Fugiat elit occaecat aute nisi</a></h4>
+                                    <p>Lorem ipsum Occaecat ut esse amet ut eiusmod laborum cillum voluptate do laboris dolor ut elit aliquip velit ut nulla anim ...</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="panel-footer">
+                        <div class="row">
+                            <div class="col-lg-10 col-md-9 col-sm-8">
+                                <i class="fa fa-clock-o"></i> Sep 29, 2013 <i class="fa fa-user"> </i><a href="#">Patrick</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article> <!-- post -->
+            <article class="post animated fadeInLeft animation-delay-11">
+                <div class="panel panel-primary">
+                    <div class="panel-body">
+                        <div class="panel-body">
+                            <ul class="comments-sidebar">
+                                <li>
+                                    <img src="~/Content/img/client2.jpg" class="img-responsive" alt="Image">
+                                    <img src="~/Content/img/stars.png" style="height:20px" class="pull-left" /><br />
+                                    <h4><a href="#">Andrew</a> in <a href="#">Lorem ipsum Fugiat elit occaecat aute nisi</a></h4>
+                                    <p>Lorem ipsum Occaecat ut esse amet ut eiusmod laborum cillum voluptate do laboris dolor ut elit aliquip velit ut nulla anim ...</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="panel-footer">
+                        <div class="row">
+                            <div class="col-lg-10 col-md-9 col-sm-8">
+                                <i class="fa fa-clock-o"></i> Sep 29, 2013 <i class="fa fa-user"> </i><a href="#">Patrick</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article> <!-- post -->
+            <article class="post animated fadeInLeft animation-delay-14">
+                <div class="panel panel-primary">
+                    <div class="panel-body">
+                        <div class="panel-body">
+                            <ul class="comments-sidebar">
+                                <li>
+                                    <img src="~/Content/img/client5.jpg" class="img-responsive" alt="Image">
+                                    <img src="~/Content/img/stars.png" style="height:20px" class="pull-left" /><br />
+                                    <h4><a href="#">Andrew</a> in <a href="#">Lorem ipsum Fugiat elit occaecat aute nisi</a></h4>
+                                    <p>Lorem ipsum Occaecat ut esse amet ut eiusmod laborum cillum voluptate do laboris dolor ut elit aliquip velit ut nulla anim ...</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="panel-footer">
+                        <div class="row">
+                            <div class="col-lg-10 col-md-9 col-sm-8">
+                                <i class="fa fa-clock-o"></i> Sep 29, 2013 <i class="fa fa-user"> </i><a href="#">Patrick</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article> <!-- post -->
+            <article class="post animated fadeInLeft animation-delay-17">
+                <div class="panel panel-primary">
+                    <div class="panel-body">
+                        <div class="panel-body">
+                            <ul class="comments-sidebar">
+                                <li>
+                                    <img src="~/Content/img/client6.jpg" class="img-responsive" alt="Image">
+                                    <img src="~/Content/img/stars.png" style="height:20px" class="pull-left" /><br />
+                                    <h4><a href="#">Andrew</a> in <a href="#">Lorem ipsum Fugiat elit occaecat aute nisi</a></h4>
+                                    <p>Lorem ipsum Occaecat ut esse amet ut eiusmod laborum cillum voluptate do laboris dolor ut elit aliquip velit ut nulla anim ...</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="panel-footer">
+                        <div class="row">
+                            <div class="col-lg-10 col-md-9 col-sm-8">
+                                <i class="fa fa-clock-o"></i> Sep 29, 2013 <i class="fa fa-user"> </i><a href="#">Patrick</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article> <!-- post -->
+            <article class="post animated fadeInLeft animation-delay-18">
+                <div class="panel panel-primary">
+                    <div class="panel-body">
+                        <div class="panel-body">
+                            <ul class="comments-sidebar">
+                                <li>
+                                    <img src="~/Content/img/client4.jpg" class="img-responsive" alt="Image">
+                                    <img src="~/Content/img/stars.png" style="height:20px" class="pull-left" /><br />
+                                    <h4><a href="#">Andrew</a> in <a href="#">Lorem ipsum Fugiat elit occaecat aute nisi</a></h4>
+                                    <p>Lorem ipsum Occaecat ut esse amet ut eiusmod laborum cillum voluptate do laboris dolor ut elit aliquip velit ut nulla anim ...</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="panel-footer">
+                        <div class="row">
+                            <div class="col-lg-10 col-md-9 col-sm-8">
+                                <i class="fa fa-clock-o"></i> Sep 29, 2013 <i class="fa fa-user"> </i><a href="#">Patrick</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article> <!-- post -->
+
+            <section>
+                <ul class="pagination">
+                    <li class="disabled"><a href="#">&laquo;</a></li>
+                    <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li><a href="#">6</a></li>
+                    <li><a href="#">7</a></li>
+                    <li><a href="#">8</a></li>
+                    <li><a href="#">9</a></li>
+                    <li><a href="#">10</a></li>
+                    <li><a href="#">&raquo;</a></li>
+                </ul>
+            </section>
+        </div> <!-- col-md-8 -->
+        <div class="col-md-3">
+            <section>
+                <div class="panel panel-primary">
+                    <div class="panel-heading"><i class="fa fa-envelope-o"></i> Additional Information</div>
+                    <div class="panel-body">
+                        <h4 class="section-title">Contacts</h4>
+                        <address>
+                            <strong>PizzaHut, Inc.</strong><br>
+                            795 Folsom Ave, Suite 600<br>
+                            San Francisco, CA 94107<br>
+                            <abbr title="Phone">P:</abbr> (123) 456-7890 <br>
+                            Mail: <a href="#">support@openmid.com</a><br />
+                            Websie: <a href="#">www.pizzahut.com</a>
+                        </address>
+                        <!-- Business Hours -->
+                        <h4 class="section-title">Business Hours</h4>
+                        <ul class="list-unstyled">
+                            <li><strong>Monday-Friday:</strong> 9am to 7pm</li>
+                            <li><strong>Saturday:</strong> 9am to 2pm</li>
+                            <li><strong>Sunday:</strong> Closed</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+    </div> <!-- row -->
+</div> <!-- container  -->
+

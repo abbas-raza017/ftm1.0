@@ -1,0 +1,59 @@
+﻿
+@{
+    ViewBag.Title = "Dashbard";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<header class="wrap-title">
+    <div class="container">
+        <h1 class="page-title">Components</h1>
+        <ol class="breadcrumb hidden-xs">
+            <li><a href="#">Home</a></li>
+            <li class="active">Dashboard</li>
+        </ol>
+    </div>
+</header>
+<div class="container">
+    <div class="row">
+        <div class="col-md-3">
+            <nav id="sidebar-menu">
+                <ul class="nav nav-pills nav-stacked affix menu animated fadeIn" data-spy="affix" data-offset-top="300" >
+                    <li><a href="#statistics" class="smooth">Statistics</a></li>
+                    <li><a href="#statistics" class="smooth">Profile</a></li>
+                    <li><a href="#statistics" class="smooth">Notifications<span class="badge">9</span></a></li>
+                    <li><a href="#statistics" class="smooth">Integrations</a></li>
+                    <li><a href="#statistics" class="smooth">Product Reviews</a></li>
+                    <li><a href="#statistics" class="smooth">Servic Reviews</a></li>
+                    <li><a href="#statistics" class="smooth">Settings</a></li>
+                </ul>
+            </nav>
+        </div> <!-- col -->
+        <div class="col-md-9">
+            <section id="components">
+                <article class="component-element" id="statistics">
+                    <h2 class="underline-title no-margin-top">Rating Statistics</h2>
+                    <!-- Nav tabs -->
+                    <ul class="nav nav-tabs">
+                        <li class="active"><a href="#example-navs" data-toggle="tab">Stats</a></li>
+                        <li><a href="#html-navs" data-toggle="tab">Comments</a></li>
+                        <li><a href="#wordpress-navs" data-toggle="tab">Notifications</a></li>
+                    </ul>
+                    <!-- Tab panes -->
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="example-navs">
+                            <img src="~/Content/img/PieChart.png" style="height: 221px;" />
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="~/Content/img/chart_6.png" />
+                        </div>
+                        <div class="tab-pane" id="html-navs">
+
+                        </div>
+                        <div class="tab-pane" id="wordpress-navs">
+
+                        </div>
+                    </div>
+                </article>
+            </section>
+        </div> <!-- col -->
+    </div>
+</div> <!-- container -->
+
