@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title - FTM</title>
     @*@Styles.Render("~/Content/css")
-    @Scripts.Render("~/bundles/modernizr")*@
+        @Scripts.Render("~/bundles/modernizr")*@
 
     <!-- CSS -->
     <link href="~/Content/css/bootstrap.min.css" rel="stylesheet" media="screen">
@@ -15,7 +15,7 @@
     <link href="~/Content/css/syntax/shCore.css" rel="stylesheet" media="screen">
     <link href="~/Content/css/syntax/shThemeDefault.css" rel="stylesheet" media="screen">
     <link href="~/Content/css/style.css" rel="stylesheet" media="screen" title="default">
-    <link href="~/Content/css/color-red.css" rel="stylesheet" media="screen" title="default">
+    <link href="~/Content/css/color-red.css" id="colorSwitchLink" rel="stylesheet" media="screen" title="default">
     <link href="~/Content/css/width-full.css" rel="stylesheet" media="screen" title="default">
 
 </head>
@@ -98,14 +98,14 @@
                         <li class="dropdown">
                             @Html.ActionLink("Categories", "categories", "Home")
                             @*<ul class="dropdown-menu">
-                                <li><a href="#">Automobiles</a></li>
-                                <li><a href="#">Food and Restaurants</a></li>
-                                <li><a href="#">Educational Institutes</a></li>
-                                <li><a href="#">Health & Well-being</a></li>
-                                <li><a href="#">Cloths and Fashion</a></li>
-                                <li><a href="#">Electronics</a></li>
-                                <li><a href="#">Travel and Vacations</a></li>
-                            </ul>*@
+                                    <li><a href="#">Automobiles</a></li>
+                                    <li><a href="#">Food and Restaurants</a></li>
+                                    <li><a href="#">Educational Institutes</a></li>
+                                    <li><a href="#">Health & Well-being</a></li>
+                                    <li><a href="#">Cloths and Fashion</a></li>
+                                    <li><a href="#">Electronics</a></li>
+                                    <li><a href="#">Travel and Vacations</a></li>
+                                </ul>*@
                         </li> <!-- dropdown -->
                         <li class="dropdown">
                             @Html.ActionLink("Blogs", "blogs", "Home")
@@ -161,9 +161,8 @@
                 </div><!-- navbar-collapse -->
             </div> <!-- container -->
         </nav> <!-- navbar navbar-default -->
+        @RenderBody()
 
-            @RenderBody()
-    
         <footer id="footer">
             <p>&copy; 2016 <a href="#">FTM</a>, inc. All rights reserved.</p>
         </footer>
@@ -171,7 +170,7 @@
     <div id="back-top">
         <a href="#header"><i class="fa fa-chevron-up"></i></a>
     </div>
-        
+
     <!-- Scripts -->
     <script src="~/Scripts/jquery-1.10.2.min.js"></script>
     <script src="~/Scripts/jquery.cookie.js"></script>
@@ -188,7 +187,7 @@
         SyntaxHighlighter.all()
     </script>
 
-        @*@Scripts.Render("~/bundles/jquery")
+    @*@Scripts.Render("~/bundles/jquery")
         @Scripts.Render("~/bundles/bootstrap")
         @RenderSection("scripts", required: false)*@
 </body>
