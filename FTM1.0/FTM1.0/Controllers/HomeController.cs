@@ -46,5 +46,10 @@ namespace FTM1._0.Controllers
         {
             return View();
         }
+
+        public ActionResult brandWebsite()
+        {
+            return View();
+        }
     }
 }

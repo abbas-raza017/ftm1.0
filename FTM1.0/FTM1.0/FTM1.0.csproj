@@ -341,6 +341,7 @@
     <Content Include="Views\Home\brand.cshtml" />
     <Content Include="Views\Home\blogs.cshtml" />
     <Content Include="Views\Home\categories.cshtml" />
+    <Content Include="Views\Home\brandWebsite.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

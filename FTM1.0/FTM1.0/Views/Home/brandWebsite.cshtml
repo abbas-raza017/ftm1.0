@@ -1,0 +1,127 @@
+﻿
+@{
+    ViewBag.Title = "Brand Website";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<header class="wrap-title">
+    <div class="container">
+        <h1 class="page-title">Random Brand Site</h1>
+        <ol class="breadcrumb hidden-xs">
+            <li><a href="#">Home</a></li>
+            <li class="active">Random Brand Site</li>
+        </ol>
+    </div>
+</header>
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+    Launch demo modal
+</button>
+
+<!-- Modal -->
+<div class="modal fade modal-lg" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Feedback</h4>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="block">
+                            <ul class="nav nav-tabs" id="myTab2">
+                                <li class="active"><a href="#fav" data-toggle="tab"><i class="fa fa-star" style="color:black"></i></a></li>
+                                <li><a href="#categories" data-toggle="tab"><i class="fa fa-tags" style="color:black"></i></a></li>
+                            </ul>
+                            <div class="tab-content">
+                                <div class="tab-pane active" id="fav">
+                                    <h3 class="post-title">Rating Chart</h3>
+
+                                    <img src="~/Content/img/PieChart.png" style="height: 221px;" />
+                                </div>
+                                <div class="tab-pane" id="categories">
+                                    <h3 class="post-title">Categories</h3>
+                                    <ul class="simple">
+                                        <li><a href="#" style="color:black">2016</a><span class="badge">193</span></li>
+                                        <li>
+                                            <a href="#" style="color:black">2015</a><span class="badge">140</span>
+                                            <ul>
+                                                <li><a href="#" style="color:black">December</a><span class="badge">110</span></li>
+                                                <li><a href="#" style="color:black">November</a><span class="badge">30</span></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#" style="color:black">2014</a><span class="badge">204</span></li>
+                                        <li><a href="#" style="color:black">2013</a><span class="badge">120</span></li>
+                                    </ul>
+                                </div>
+                            </div> <!-- tab-content -->
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <section>
+                            <h2 class="section-title">Send Message</h2>
+                            <p>Lorem ipsum Ex aliqua tempor nisi laboris dolor id laborum irure minim tempor in sit dolore amet sit esse nostrud tempor nulla consequat aute in nostrud laboris sint ullamco amet nisi pariatur officia nulla pariatur in id et labore dolore ad sit.</p>
+
+                            How much you rate us? <img src="~/Content/img/stars.png" style="height:20px" /><br /><br />
+
+                            <form role="form">
+                                <div class="form-group">
+                                    <label for="InputMessage">Mesagge</label>
+                                    <textarea class="form-control" id="InputMessage" rows="8"></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary pull-right">Submit</button>
+                                <div class="clearfix"></div>
+                            </form>
+                        </section>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="panel panel-primary">
+                            <div class="panel-body">
+                                <article class="post animated fadeInLeft animation-delay-8">
+                                    <div class="panel panel-default">
+                                        <div class="panel-body">
+                                            <img src="~/Content/img/stars.png" style="height:20px" /><br />
+                                            <div class="row">
+                                                <div class="col-lg-12">
+                                                    <p>Ullamco minim nulla aliquip in nulla labore sint nostrud commodo.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="panel-footer">
+                                            <div class="row">
+                                                <div class="col-lg-10 col-md-9 col-sm-8">
+                                                    <i class="fa fa-clock-o"></i> Sep 29, 2013 <i class="fa fa-user"> </i><a href="#">Patrick</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article> <!-- post -->
+                                <article class="post animated fadeInLeft animation-delay-8">
+                                    <div class="panel panel-default">
+                                        <div class="panel-body">
+                                            <img src="~/Content/img/stars.png" style="height:20px" /><br />
+                                            <div class="row">
+                                                <div class="col-lg-12">
+                                                    <p>Ullamco minim nulla aliquip in nulla labore sint nostrud commodo.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="panel-footer">
+                                            <div class="row">
+                                                <div class="col-lg-10 col-md-9 col-sm-8">
+                                                    <i class="fa fa-clock-o"></i> Sep 29, 2013 <i class="fa fa-user"> </i><a href="#">Patrick</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article> <!-- post -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<br />
