@@ -187,6 +187,7 @@
     <Content Include="Content\css\color-puregreen.css" />
     <Content Include="Content\css\color-red.css" />
     <Content Include="Content\css\color-violet.css" />
+    <Content Include="Content\css\custom.css" />
     <Content Include="Content\css\font-awesome.min.css" />
     <Content Include="Content\css\lightbox.css" />
     <Content Include="Content\css\style.css" />
@@ -216,6 +217,14 @@
     <Content Include="Content\img\ftm1.png" />
     <Content Include="Content\img\ftm2.png" />
     <Content Include="Content\img\ftm3.png" />
+    <Content Include="Content\img\img-automobiles.png" />
+    <Content Include="Content\img\img-education.png" />
+    <Content Include="Content\img\img-electronics.png" />
+    <Content Include="Content\img\img-fashion.png" />
+    <Content Include="Content\img\img-food.png" />
+    <Content Include="Content\img\img-health.png" />
+    <Content Include="Content\img\img-real-estates.png" />
+    <Content Include="Content\img\img-travel.png" />
     <Content Include="Content\img\review_header.jpg" />
     <Content Include="Content\img\loading.gif" />
     <Content Include="Content\img\m1.jpg" />
@@ -342,6 +351,7 @@
     <Content Include="Views\Home\blogs.cshtml" />
     <Content Include="Views\Home\categories.cshtml" />
     <Content Include="Views\Home\brandWebsite.cshtml" />
+    <Content Include="Views\Home\FAQs.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -371,7 +381,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>10511</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:10511/</IISUrl>
+          <IISUrl>http://localhost:10512/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

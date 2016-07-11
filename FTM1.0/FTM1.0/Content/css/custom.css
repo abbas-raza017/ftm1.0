@@ -1,0 +1,58 @@
+﻿#search-home-brands {
+    width: 700px;
+}
+
+#search-home-brands input {
+    background-color: #a00000;
+    border-color: #a00000;
+    color: #fff;
+    height: 50px;
+    border-top-left-radius: 5px !important;
+    border-bottom-left-radius: 5px !important;
+    opacity: 0.7;
+}
+
+#search-home-brands .input-group{
+    left: 50%;
+    bottom: 5px;
+}
+
+#search-home-brands input:focus {
+    box-shadow: none;
+    border-color: #808080;
+    opacity: 0.5;
+}
+
+#search-home-brands .btn {
+    background-color: #808080;
+    color: #fff;
+    border-color: #808080;
+    height: 50px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+#search-home-brands input:-moz-placeholder {
+    color: #ddd;
+}
+
+#search-home-brands input::-moz-placeholder {
+    color: #ddd;
+}
+
+#search-home-brands input:-ms-input-placeholder {
+    color: #ddd;
+}
+
+#search-home-brands input::-webkit-input-placeholder {
+    color: #ddd;
+}
+
+#categories-list .col-md-1{
+    width: 145px;
+}
+
+#categories-list a{
+    height: 57px;
+    width: 91px;
+}

@@ -4,7 +4,152 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
+<header class="wrap-title">
+    <div class="container">
+        <h1 class="page-title">Categories</h1>
+        <ol class="breadcrumb hidden-xs">
+            <li><a href="#">Home</a></li>
+            <li class="active">Categories</li>
+        </ol>
+    </div>
+</header>
+
+<div class="container" id="categories-list">
+    <div class="row">
+        <div class="col-md-1">
+            <div class="img-caption animated animation-delay-1 bounceInLeft">
+                <img src="~/Content/img/img-food.png" class="img-responsive" alt="Image">
+                <div class="caption">
+                    <div class="caption-content">
+                        <a href="#food-resturants" class="animated fadeInDown" data-toggle="tab">Food & Restaurants</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-1">
+            <div class="img-caption animated animation-delay-2 bounceInLeft">
+                <img src="~/Content/img/img-education.png" class="img-responsive" alt="Image">
+                <div class="caption">
+                    <div class="caption-content">
+                        <a href="#educational-institutes" class="animated fadeInDown" data-toggle="tab">Educational Institutes</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-1">
+            <div class="img-caption animated animation-delay-3 bounceInLeft">
+                <img src="~/Content/img/img-health.png" class="img-responsive" alt="Image">
+                <div class="caption">
+                    <div class="caption-content">
+                        <a href="#" class="animated fadeInDown">Health & Well-being</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="col-md-1">
+            <div class="img-caption animated animation-delay-4 bounceInLeft">
+                <img src="~/Content/img/img-electronics.png" class="img-responsive" alt="Image">
+                <div class="caption">
+                    <div class="caption-content">
+                        <a href="#" class="animated fadeInDown">Electronics</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-1">
+            <div class="img-caption animated animation-delay-5 bounceInLeft">
+                <img src="~/Content/img/img-real-estates.png" class="img-responsive" alt="Image">
+                <div class="caption">
+                    <div class="caption-content">
+                        <a href="#" class="animated fadeInDown">Real Estates</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-1">
+            <div class="img-caption animated animation-delay-6 bounceInLeft">
+                <img src="~/Content/img/img-travel.png" class="img-responsive" alt="Image">
+                <div class="caption">
+                    <div class="caption-content">
+                        <a href="#" class="animated fadeInDown">Travels & Tours</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-1">
+            <div class="img-caption animated animation-delay-7 bounceInLeft">
+                <img src="~/Content/img/img-fashion.png" class="img-responsive" alt="Image">
+                <div class="caption">
+                    <div class="caption-content">
+                        <a href="#" class="animated fadeInDown">Clothes & Fashion</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-1">
+            <div class="img-caption animated animation-delay-8 bounceInLeft">
+                <img src="~/Content/img/img-automobiles.png" class="img-responsive" alt="Image">
+                <div class="caption">
+                    <div class="caption-content">
+                        <a href="#" class="animated fadeInDown">Automobiles</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 <div class="container">
+    <div class="tab-content">
+        <div class="tab-pane active animated fadeInDown" id="food-resturants">
+            <article class="component-element">
+                <h2 class="underline-title no-margin-top">Food & Restaurants</h2>
+                <div class="row">
+                    <div class="col-md-3">
+                        <nav id="sidebar-menu">
+                            <ul class="nav nav-pills nav-stacked affix menu animated fadeIn" data-spy="affix" data-offset-top="300">
+                                <li><a href="#restaurants" class="smooth">Restaurants</a></li>
+                                <li><a href="#fast-food" class="smooth">Fast Food</a></li>
+                                <li><a href="#desi-khaba" class="smooth">Desi Khaba</a></li>
+                                <li><a href="#cafeteria" class="smooth">Cafeteria</a></li>
+                                <li><a href="#fish-courts" class="smooth">Fish Courts</a></li>
+                                <li><a href="#icecream" class="smooth">Ice Cream</a></li>
+                            </ul>
+                        </nav>
+                    </div> <!-- col -->
+                    <div class="col-md-9">
+                        <section id="components">
+                            <article class="component-element" id="restaurants">
+                                <h2 class="underline-title no-margin-top">Restaurants</h2>
+                                Italian, French, Chinese, Simple
+                            </article>
+                            <article class="component-element" id="fast-food">
+                                <h2 class="underline-title no-margin-top">Fast Food</h2>
+                                Burger, Pizza, Steaks
+                            </article>
+                        </section>
+                    </div> <!-- col -->
+                </div>
+            </article>
+        </div>
+        <div class="tab-pane animated fadeInDown" id="educational-institutes">
+            <article class="component-element">
+                <h2 class="underline-title no-margin-top">Educational Institutes</h2>
+                educational-institutes
+            </article>
+        </div>
+    </div>
+</div>
+
+@*<div class="container">
     <div class="row">
         <div class="col-sm-5">
             <div class="row">
@@ -99,4 +244,4 @@
             </div>
         </div>
     </div>
-</div>
+</div>*@

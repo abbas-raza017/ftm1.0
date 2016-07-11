@@ -17,6 +17,7 @@
     <link href="~/Content/css/style.css" rel="stylesheet" media="screen" title="default">
     <link href="~/Content/css/color-red.css" id="colorSwitchLink" rel="stylesheet" media="screen" title="default">
     <link href="~/Content/css/width-full.css" rel="stylesheet" media="screen" title="default">
+    <link href="~/Content/css/custom.css" rel="stylesheet" />
 
 </head>
 <body>
@@ -44,19 +45,14 @@
             <a href="#" rel="color-violet.css" class="color violet">violet</a>
             <a href="#" rel="color-red.css" class="color red">red</a>
 
-            <h3>Container Selector</h3>
-            <div class="btn-group">
-                <button href="#" class="option btn btn-sm btn-primary" rel="width-boxed.html">Boxed</button>
-                <button href="#" class="option btn btn-sm btn-primary" rel="width-full.html">Full Width</button>
-            </div>
         </div>
     </div> <!-- color-switcher -->
 
     <div class="boxed animated fadeIn animation-delay-5">
-        <header id="header" class="hidden-xs">
+        <header id="header" class="hidden-xs" style="height:111px">
             <div class="container">
                 <div id="header-title">
-                    <h1 class="animated fadeInDown"><a href="index.html"><span>F</span>TM</a></h1>
+                    <h1 class="animated fadeInDown">@Html.ActionLink("FTM", "index", "Home")</h1>
                     <p class="animated fadeInLeft">Feedback That Matters!</p>
                 </div>
                 <div id="social-header" class="hidden-xs">
@@ -68,26 +64,11 @@
                     <a href="#" class="social-icon soc-linkedin animated fadeInDown animation-delay-6"><i class="fa fa-linkedin"></i></a>
                     <a href="#" class="social-icon soc-github animated fadeInDown animation-delay-7"><i class="fa fa-github"></i></a>
                 </div>
-                <div id="search-header" class="hidden-xs animated bounceInRight">
-                    <div class="input-group">
-                        <input type="text" class="form-control" placeholder="Search...">
-                        <span class="input-group-btn">
-                            <button class="btn btn-default" type="button"><i class="fa fa-search"></i></button>
-                        </span>
-                    </div><!-- /input-group -->
-                </div>
             </div> <!-- container -->
         </header> <!-- header -->
         <nav class="navbar navbar-static-top navbar-mind" role="navigation">
             <div class="container">
-                <!-- Brand and toggle get grouped for better mobile display -->
-                <div class="navbar-header">
-                    <a class="navbar-brand visible-xs" href="index.html">Open <span>Mind</span></a>
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-mind-collapse">
-                        <span class="sr-only">Toggle navigation</span>
-                        <i class="fa fa-bars fa-inverse"></i>
-                    </button>
-                </div>
+                
 
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse navbar-mind-collapse">
@@ -111,7 +92,7 @@
                             @Html.ActionLink("Blogs", "blogs", "Home")
                         </li> <!-- dropdown -->
                         <li class="dropdown">
-                            <a href="faq.html">FAQ's</a>
+                            @Html.ActionLink("FAQ's", "FAQs", "Home")
                         </li> <!-- dropdown -->
                         <li class="dropdown">
                             <a href="#">Case Studies</a>

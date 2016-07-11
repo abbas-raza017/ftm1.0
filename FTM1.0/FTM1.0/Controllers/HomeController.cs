@@ -51,5 +51,10 @@ namespace FTM1._0.Controllers
         {
             return View();
         }
+
+        public ActionResult FAQs()
+        {
+            return View();
+        }
     }
 }
